@@ -1,6 +1,6 @@
-# MedDist Nepal - Medicine Distributor Website
+# Arnav Enterprises - Medicine Distributor Website
 
-A complete, working website for a medicine distributor in Nepal with multiple pages and full navigation.
+A complete, working website for Arnav Enterprises, a medicine distributor based in Pepsicola, Nepal with multiple pages and full navigation.
 
 ## Pages
 
