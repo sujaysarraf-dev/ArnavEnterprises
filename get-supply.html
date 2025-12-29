@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get Supply - MedDist Nepal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-hover": "#1d4ed8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2332",
+                        "text-main-light": "#111318",
+                        "text-main-dark": "#f9fafb",
+                        "text-muted-light": "#616f89",
+                        "text-muted-dark": "#9ca3af",
+                        "border-light": "#dbdfe6",
+                        "border-dark": "#374151",
+                        "success": "#25D366",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+        textarea::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        textarea::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark textarea::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main-light dark:text-text-main-dark antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark px-6 py-4 transition-colors">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-3">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">MedDist Nepal</h2>
+</a>
+<div class="hidden md:flex items-center gap-4">
+<nav class="flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary-hover transition-colors text-white text-sm font-bold shadow-sm">
+<span>Partner Login</span>
+</button>
+</div>
+<button class="md:hidden text-text-main-light dark:text-white" id="mobileMenuBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden border-t border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark px-6 py-4" id="mobileMenu">
+<nav class="flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold">
+<span>Partner Login</span>
+</button>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col justify-center py-10 px-4 md:px-8 lg:px-12">
+<div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+<!-- Left Column: Copy & Value Props -->
+<div class="flex flex-col gap-8 lg:pt-8">
+<div class="flex flex-col gap-4">
+<span class="inline-flex items-center w-fit gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+                        Authorized Distributor
+                    </span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-text-main-light dark:text-white">
+                        Reliable Medicine Supply for <span class="text-primary">Nepal's Healthcare</span>
+</h1>
+<p class="text-lg md:text-xl text-text-muted-light dark:text-text-muted-dark leading-relaxed max-w-lg">
+                        We partner with Pharmacies, Hospitals, and Clinics to deliver genuine pharmaceutical products nationwide. Simplify your procurement process today.
+                    </p>
+</div>
+<!-- Trust Indicators -->
+<div class="grid sm:grid-cols-2 gap-6 pt-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="size-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<div>
+<h3 class="font-bold text-base mb-1">Nationwide Delivery</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-tight">Fast logistics network covering all major districts.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="size-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400">verified</span>
+</div>
+<div>
+<h3 class="font-bold text-base mb-1">100% Genuine</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-tight">Directly sourced from authorized manufacturers.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="size-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-400">support_agent</span>
+</div>
+<div>
+<h3 class="font-bold text-base mb-1">24/7 Support</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-tight">Dedicated team for order tracking and inquiries.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Inquiry Form -->
+<div class="w-full">
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-xl border border-border-light dark:border-border-dark p-6 md:p-8 lg:p-10">
+<div class="mb-8">
+<h3 class="text-2xl font-bold text-text-main-light dark:text-white mb-2">Get a Quote / Inquiry</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">Fill out the form below and our sales team will contact you within 2 hours.</p>
+</div>
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Thank you for your inquiry! Our sales team will contact you within 2 hours.');">
+<!-- Business Name -->
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-text-main-light dark:text-white">Business / Clinic / Hospital Name</span>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted-light dark:text-text-muted-dark">domain</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-main-light dark:text-white placeholder:text-text-muted-light/60 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Enter your business name" type="text" required/>
+</div>
+</label>
+<!-- Phone Number -->
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-text-main-light dark:text-white">Phone Number</span>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted-light dark:text-text-muted-dark">call</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-main-light dark:text-white placeholder:text-text-muted-light/60 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="+977 98XXXXXXXX" type="tel" required/>
+</div>
+</label>
+<!-- Location -->
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-text-main-light dark:text-white">Location</span>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted-light dark:text-text-muted-dark">location_on</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-main-light dark:text-white placeholder:text-text-muted-light/60 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="e.g., Lazimpat, Kathmandu" type="text" required/>
+</div>
+</label>
+<!-- Required Medicines -->
+<label class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-text-main-light dark:text-white">Required Medicines</span>
+<div class="relative">
+<textarea class="w-full min-h-[120px] p-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-text-main-light dark:text-white placeholder:text-text-muted-light/60 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-y" placeholder="List the medicines or products you need..." required></textarea>
+</div>
+</label>
+<button class="w-full h-12 mt-2 bg-primary hover:bg-primary-hover text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 group" type="submit">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating WhatsApp Button -->
+<a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-40 group" href="#">
+<div class="absolute inset-0 rounded-full bg-success animate-ping opacity-20"></div>
+<div class="relative flex items-center justify-center size-14 md:size-16 rounded-full bg-success text-white shadow-lg shadow-success/30 hover:shadow-success/50 hover:scale-105 transition-all duration-300">
+<svg class="size-8 md:size-9 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</div>
+<div class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-surface-dark text-white text-xs font-bold py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden md:block">
+            Chat with us
+            <div class="absolute right-[-4px] top-1/2 -translate-y-1/2 size-2 bg-surface-dark rotate-45"></div>
+</div>
+</a>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark pt-12 pb-6">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-10">
+<div class="max-w-xs">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">medical_services</span>
+<span class="text-lg font-bold">MedDist Nepal</span>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed">
+                        Connecting Nepal's healthcare providers with genuine pharmaceutical supplies. Efficient, reliable, and nationwide.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div>
+<h4 class="font-bold mb-4 text-sm uppercase tracking-wider text-text-main-light dark:text-white">Quick Links</h4>
+<ul class="flex flex-col gap-3 text-sm text-text-muted-light dark:text-text-muted-dark">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="products.html">Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-sm uppercase tracking-wider text-text-main-light dark:text-white">Contact</h4>
+<ul class="flex flex-col gap-3 text-sm text-text-muted-light dark:text-text-muted-dark">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">call</span>
+                                +977 1-4420000
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">mail</span>
+                                support@meddistnepal.com
+                            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">location_on</span>
+                                Lazimpat, Kathmandu, Nepal
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-border-light dark:border-border-dark pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted-light dark:text-text-muted-dark">
+<p>© 2024 MedDist Nepal. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+

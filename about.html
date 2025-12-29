@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - MedDist Nepal</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "accent-green": "#10b981",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#111318] dark:text-white overflow-x-hidden">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+<!-- Navbar -->
+<header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-[#f0f2f4] dark:bg-background-dark/90 dark:border-gray-800">
+<div class="layout-container flex justify-center w-full">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between w-full max-w-[1280px]">
+<a href="index.html" class="flex items-center gap-4 text-[#111318] dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-3xl">local_pharmacy</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">MedDist Nepal</h2>
+</a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-primary text-sm font-bold leading-normal" href="about.html">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="get-supply.html" class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-700 transition-colors">
+<span class="truncate">Get Supply</span>
+</a>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-[#111318] dark:text-white" id="mobileMenuBtn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden px-4 pb-4" id="mobileMenu">
+<nav class="flex flex-col gap-4">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-primary text-sm font-bold" href="about.html">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a href="get-supply.html" class="flex items-center justify-center h-10 px-4 bg-primary text-white text-sm font-bold rounded-lg">
+<span>Get Supply</span>
+</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="flex justify-center py-5 px-4 md:px-10">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 relative overflow-hidden group" data-alt="A delivery truck driving through a scenic mountain road in Nepal" style='background-image: linear-gradient(rgba(19, 91, 236, 0.4) 0%, rgba(16, 22, 34, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMxk8RQu-VaNar9YCDG_0F8zNjF9NT6JUpr92jWVV9pn16dA_Uo6wsk0H61tCgFpQ44qNIhzLzBL5C3DQ0ecmcesS2UoFxTRjWL9Wk4hDTpgxV8NuxDjQ6gXD7pdOvbt4G1rTSJlJZiAxJmo4BkUCWx6Xyb1RlB1qaOo8Z5nsABk-1ZEX0UbQ50ZeEQFpFeGNrEEUexJQuMKJVGkgSsCyP7aWDFbJbClFNHGT6_3BW9-wVOsVfj6C5gPJLL3Iry3YhLiVXHyo1Xg27");'>
+<div class="flex flex-col gap-2 text-center relative z-10 max-w-[800px]">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black md:text-6xl drop-shadow-lg">
+                                        Connecting Health Across Nepal
+                                    </h1>
+<h2 class="text-gray-100 text-base font-normal leading-relaxed @[480px]:text-lg mt-4 max-w-[600px] mx-auto drop-shadow-md">
+                                        Delivering genuine healthcare solutions to every corner of the nation, from the Terai plains to the Himalayan peaks.
+                                    </h2>
+</div>
+<div class="flex gap-4 mt-4 relative z-10">
+<a href="products.html" class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-700 text-white text-base font-bold transition-all shadow-lg hover:shadow-xl">
+                                        Our Services
+                                    </a>
+<a href="contact.html" class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white hover:bg-gray-100 text-primary text-base font-bold transition-all shadow-lg">
+                                        Contact Us
+                                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="flex justify-center py-10 px-4 md:px-10 bg-white dark:bg-gray-900 border-y border-[#f0f2f4] dark:border-gray-800">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="flex flex-wrap gap-6 p-4 justify-center">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-background-light dark:bg-background-dark border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">Experience</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-3xl font-black">15+ Years</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-background-light dark:bg-background-dark border-l-4 border-accent-green shadow-sm hover:shadow-md transition-shadow">
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">Network</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-3xl font-black">2000+ Pharmacies</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-background-light dark:bg-background-dark border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">Coverage</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-3xl font-black">77 Districts</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-background-light dark:bg-background-dark border-l-4 border-accent-green shadow-sm hover:shadow-md transition-shadow">
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">Products</p>
+<p class="text-[#111318] dark:text-white tracking-tight text-3xl font-black">5000+ SKUs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Section -->
+<section class="flex justify-center py-16 px-4 md:px-10">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="flex flex-col gap-10 px-4 @[864px]:flex-row items-center">
+<div class="w-full md:w-1/2 flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Since 2008</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">
+                                Our Story
+                            </h2>
+<div class="space-y-4 text-base md:text-lg text-gray-600 dark:text-gray-300">
+<p>
+                                    Founded in 2008, MedDist Nepal started with a single delivery van and a bold promise: no compromise on quality. In a market challenged by supply chain inconsistencies, we vowed to be the reliable bridge between manufacturers and patients.
+                                </p>
+<p>
+                                    Today, we are the backbone of medicine distribution for hundreds of hospitals and clinics. We ensure that a patient in a remote village in Karnali receives the same high-quality, temperature-controlled medication as someone in the heart of Kathmandu.
+                                </p>
+</div>
+<div class="pt-4">
+<a href="contact.html" class="text-primary font-bold hover:text-blue-700 flex items-center gap-2 group">
+                                    Contact us today 
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 mt-8 md:mt-0">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-gray-200" data-alt="Warehouse workers sorting medicine boxes in Kathmandu facility" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaOdk-M2LdqDSBMlK1n6M0tcc21X5sbnxbeOQ97WotjTowUz-e0xqa6kvDmNZbI2Y7LYOa0n30dl-aI70ghZq71jlnWH2GrP66qaXep6NLJpO12cPf2wdNVGgiiRObfPNUkoEQDc6fw7-zwJ7M_ORYK25F7-jvF_cik2ZoC5qLh2O6iTKrPbPfWzVvcS8ZlM-gjbiRPXhdUVL_6hh7oLsAqo3XdL6gbtNyRWB2RgJAY8RKesWXjXdD84PvbV1_pnbOsUa8lF3wPOdA"); background-size: cover; background-position: center;'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-bold text-lg">Kathmandu Central Warehouse</p>
+<p class="text-sm opacity-80">Established 2012</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Values Section -->
+<section class="flex justify-center py-16 px-4 md:px-10 bg-[#F3F4F6] dark:bg-[#151b2b]">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="flex flex-col gap-10 px-4">
+<div class="text-center max-w-[720px] mx-auto">
+<h2 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-black leading-tight mb-4">
+                                Our Core Values
+                            </h2>
+<p class="text-gray-600 dark:text-gray-300 text-lg">
+                                Driven by a commitment to quality, integrity, and accessibility in every pill we deliver.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Mission -->
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-lg">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-3xl">target</span>
+</div>
+<h3 class="text-[#111318] dark:text-white text-xl font-bold">Our Mission</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">To ensure every citizen has access to genuine, life-saving medication regardless of their geographical location.</p>
+</div>
+<!-- Vision -->
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-lg">
+<div class="size-12 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green mb-2">
+<span class="material-symbols-outlined text-3xl">visibility</span>
+</div>
+<h3 class="text-[#111318] dark:text-white text-xl font-bold">Our Vision</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">To be the most trusted and efficient healthcare logistics partner in the Himalayan region.</p>
+</div>
+<!-- Integrity -->
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 hover:-translate-y-1 transition-transform duration-300 shadow-sm hover:shadow-lg">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-[#111318] dark:text-white text-xl font-bold">Integrity</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Fighting counterfeit drugs with strict quality control protocols and authorized sourcing.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nationwide Coverage Map Section -->
+<section class="flex justify-center py-16 px-4 md:px-10 bg-white dark:bg-background-dark">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
+<div class="order-2 lg:order-1 relative rounded-xl overflow-hidden border border-gray-100 shadow-inner bg-blue-50 p-4" data-location="Nepal">
+<div class="w-full aspect-[4/3] relative rounded-lg overflow-hidden bg-white" data-alt="Map of Nepal highlighting distribution districts and hubs">
+<img alt="Nepal Map Background" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSm2XkeuIO1RABqHZVzDAYM1K14gPF2E9UEv_85nF_QxYrRV_yzZDll9ebFAeHMYIEyQW3YIdx-2hDP6MNGXNwLvqtuKCFT2pPDkcUrKlPuitQwgdjVstkizZO6DscuDOzihccwvFoTUsxPRm5BrLFPcSiQYA9GjI63rNDrAYpGSn4AP2MBH6_1gdrdvj-LUYxraiiPMR_USWMYrB22DN9qWDigGnvthoN3LMAXlPVeD_EYOO9qfmKr8qt_TuITjc_AsXmRLzVGtyY"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<!-- Map Markers -->
+<div class="absolute top-[40%] left-[30%] size-4 bg-accent-green rounded-full border-2 border-white animate-pulse shadow-lg"></div>
+<div class="absolute top-[45%] left-[50%] size-6 bg-primary rounded-full border-4 border-white shadow-xl flex items-center justify-center z-10">
+<span class="size-2 bg-white rounded-full"></span>
+</div>
+<div class="absolute top-[50%] left-[70%] size-4 bg-accent-green rounded-full border-2 border-white animate-pulse shadow-lg"></div>
+</div>
+<div class="flex gap-4 mt-4 justify-center">
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-primary"></span>
+<span class="text-xs font-bold text-gray-700">Central Hub</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="size-3 rounded-full bg-accent-green"></span>
+<span class="text-xs font-bold text-gray-700">Regional Centers</span>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex flex-col gap-6">
+<h2 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-black leading-tight">
+                                Nationwide Reach
+                            </h2>
+<p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                                Our logistics network is designed to overcome the geographical challenges of Nepal. From the bustling streets of Kathmandu to the remote trails of Solukhumbu, we ensure timely delivery.
+                            </p>
+<ul class="space-y-4 mt-2">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-[#111318] dark:text-white">Cold Chain Logistics</h4>
+<p class="text-sm text-gray-500">Temperature controlled vehicles for vaccines and insulin.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-[#111318] dark:text-white">Real-time Tracking</h4>
+<p class="text-sm text-gray-500">GPS enabled fleet for precise delivery estimates.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-green mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-[#111318] dark:text-white">7 Regional Warehouses</h4>
+<p class="text-sm text-gray-500">Strategically located for rapid response.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="flex justify-center py-16 px-4 md:px-10 bg-[#f8fafc] dark:bg-[#0f1520]">
+<div class="layout-content-container flex flex-col max-w-[1280px] flex-1 w-full">
+<div class="flex flex-col gap-10 px-4">
+<div class="flex flex-col gap-2 text-center mb-6">
+<h2 class="text-[#111318] dark:text-white text-3xl md:text-4xl font-black">Leadership Team</h2>
+<p class="text-gray-500 dark:text-gray-400">Guided by experience and a passion for public health.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Team Member 1 -->
+<div class="group flex flex-col gap-0 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/5] w-full bg-gray-200 overflow-hidden" data-alt="Portrait of Rajesh Sharma, CEO">
+<img alt="CEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOwS1beIiKdtnL_Dt3INBchAkQWeoAzZH3xHLxTwQJLoeRioRKRM44Dq-j5X8n5ejFNeHWdFtgddUT_xFqIa0DFCdrvBYIXXd2HPuOVhJuGcWGgfG7aSF316w4GTQ1-PfU4_UGL8XGpJnXIgiIroVI3itrKCA0iAkZpdBHRI97f-CxFaSXCFzAmlAKeytaPomxcOdIBPzggZEshWEbxZt8MKYZynZpNeH-lN_-iz80Xg4ipQNfXIsBPiMeGlaUX9bXzfOtNUdsvM33"/>
+</div>
+<div class="p-5 border-t border-gray-100 dark:border-gray-700">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">Rajesh Sharma</h3>
+<p class="text-primary font-medium text-sm">Chief Executive Officer</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group flex flex-col gap-0 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/5] w-full bg-gray-200 overflow-hidden" data-alt="Portrait of Sunita Gurung, Operations Director">
+<img alt="Ops Director" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyPKKFuzdwMdMxyxTPhFsy7tdU_JsVkRzHbk23ZY5Ye2RaD_UvzsFlYGg9E-XRnmX3ZPqpbFbPhqg3hv3WisJbHv5Vo73oXYoUGJgRQJ0ANhX2EFFB93_PnXv2sDBiKbP8lXF8mEuw5Yjm9zYiwYZ5NZuxaypQugTw0DJhKynOsObtFUUwnkizn6ox2ZbVFXPxsCr1GeM7aFdPkhysD8spoLhn2XZqWWHoKqU6wNavwgvcihA9FyuP5CDxm2j01PtnFE-x68SdNuWO"/>
+</div>
+<div class="p-5 border-t border-gray-100 dark:border-gray-700">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">Sunita Gurung</h3>
+<p class="text-primary font-medium text-sm">Operations Director</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group flex flex-col gap-0 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/5] w-full bg-gray-200 overflow-hidden" data-alt="Portrait of Amit Thapa, Head of Quality Control">
+<img alt="QC Head" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2NRxR_MBpfCGK8kjRIXLPXhpuv7RjUKlq2ZkMviZtxlzoG9MuGpZir5BETqnaCxURc7mld5mcLMeMWulYdmSi7Ks4rc5hIyel7TbCdegxGbhwLtsoNFLdinDfENFHeN1p9sDJflFVMUN9e6Rl8-agA1O4yfO1GhMThJw4m1elHGiugmj5jyajhAcnIKsbJY4-ialjk2npFVH2K3LgemGoBmx7FmLtgvva13rBZ5yNYB8pc1Pl-VifrJY0QUArJFa-mHRXAjyCwYIX"/>
+</div>
+<div class="p-5 border-t border-gray-100 dark:border-gray-700">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">Amit Thapa</h3>
+<p class="text-primary font-medium text-sm">Head of Quality Control</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group flex flex-col gap-0 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/5] w-full bg-gray-200 overflow-hidden" data-alt="Portrait of Binod Karki, Logistics Manager">
+<img alt="Logistics Manager" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvRBxtkhc6wX6WaEPuGngz8M7ucPCm48X72_qvF-LDQ1ewTNv8966IkHWIJUi5oQHxfpdfEUTGHyXULFNirQM6oEMLQXrzFvs0j85HnLn45p91DMtUCOnzb-OhBFjjFRrtQbsbHasKWxO7ZCn-G2kNMhpLpMALWLrx4lEaPuyYHchGqRcOi7lQbIRN8zonDPXMUwLGFlOwSXooW_3p5vq8o2_2_JWq33c5KXADWR8da4QlmcQmTpRadJdWCm3mnDp-U2xlyatyDMaX"/>
+</div>
+<div class="p-5 border-t border-gray-100 dark:border-gray-700">
+<h3 class="text-lg font-bold text-[#111318] dark:text-white">Binod Karki</h3>
+<p class="text-primary font-medium text-sm">Logistics Manager</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Strip -->
+<section class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark py-8">
+<div class="layout-container flex justify-center w-full">
+<div class="flex flex-col md:flex-row gap-8 items-center justify-between max-w-[960px] w-full px-10">
+<p class="text-sm font-semibold text-gray-400 uppercase tracking-widest">Accredited by</p>
+<div class="flex gap-8 grayscale opacity-60">
+<div class="h-8 w-24 bg-gray-300 rounded" data-alt="Logo of Department of Drug Administration Nepal"></div>
+<div class="h-8 w-24 bg-gray-300 rounded" data-alt="Logo of ISO 9001 Certification"></div>
+<div class="h-8 w-24 bg-gray-300 rounded" data-alt="Logo of Nepal Chamber of Commerce"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-white pt-16 pb-8 px-4 md:px-10">
+<div class="layout-container flex justify-center w-full">
+<div class="flex flex-col w-full max-w-[1280px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">local_pharmacy</span>
+<h3 class="text-xl font-bold">MedDist Nepal</h3>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-4">
+                                The most trusted name in pharmaceutical distribution across the Himalayas. Connecting manufacturers to patients since 2008.
+                            </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="flex flex-col gap-2 text-gray-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="products.html">Our Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="get-supply.html">Get Supply</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact Us</h4>
+<ul class="flex flex-col gap-3 text-gray-400 text-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                                    Lazimpat, Kathmandu, Nepal
+                                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">call</span>
+                                    +977-1-4420000
+                                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+                                    info@meddistnepal.com
+                                </li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Newsletter</h4>
+<p class="text-gray-400 text-sm mb-3">Subscribe for industry updates.</p>
+<div class="flex gap-2">
+<input class="bg-gray-800 border-none rounded text-sm text-white px-3 py-2 w-full focus:ring-1 focus:ring-primary" placeholder="Your email" type="email"/>
+<button class="bg-primary hover:bg-blue-600 text-white rounded px-3 py-2">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 text-sm">© 2024 MedDist Nepal. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button (WhatsApp) -->
+<a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 transition-transform duration-300 group" href="#">
+<svg class="size-8" fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-8.683-2.031-.967-.272-.297-.471-.446-.967-.446s-.891.149-1.337.596-.545.967-.545 1.337.373 2.156 1.486 3.72c1.114 1.564 2.879 2.508 3.673 2.805 2.373.887 2.373.887 2.916.843.543-.045 1.758-.718 2.006-1.412.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+<span class="absolute right-16 bg-white text-[#111318] px-3 py-1 rounded shadow-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Chat with us</span>
+</a>
+</div>
+<script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
